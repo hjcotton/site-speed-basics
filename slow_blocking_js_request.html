@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Slow Blocking JS Request</title>
+	</head>
+	<body>
+		<h1>Slow Blocking JS Request</h1>
+
+		<p>This page is loading a slow script directly under this message. There is additional content on the page below that isn't displayed until the script is finished downloading and being parsed.</p>
+
+		<p id="script" style="font-weight: bold;"></p>
+
+		<script src="scripts/slow_script.php"></script>
+
+		<!--<script src="scripts/slow_script.php" async></script>-->
+
+		<p>This is the rest of your page content that isn't being loaded because a slow script is holding it up. That's why scripts go at the bottom of the page and not in the head.</p>
+
+		<p>Use the <em>async</em> attribute on scripts when possible - especially third-party ones on domains you do not control. (Demo)</p>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Slow Blocking CSS Request</title>
+
+		<link rel="stylesheet" href="scripts/slow_css.php" type="text/css">
+	</head>
+	<body>
+		<h1>Slow Blocking CSS Request</h1>
+
+		<p>This page is slow to load because of a slow CSS file in the header. That's because CSS is <em>render blocking</em>.</p>
+
+		<p>Prevent this by ensuring that CSS files are as small and fast to download as possible.</p>
+			
+		<p>Consider inlining CSS for <em>above the fold</em> markup in the &lt;head&gt; and load an additional CSS file for <em>below the fold</em> content.</p>
+
+		<p>Render-blocking is intentional - what good is your site without CSS? (Demo <em>flash of unstyled content - FOUC</em>).</p>
+
+		<!--<link rel="stylesheet" href="scripts/slow_css.php" type="text/css">-->
+	</body>
+</html>
